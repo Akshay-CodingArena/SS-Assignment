@@ -42,7 +42,6 @@ export default function Catalog({data,page}) {
           <TableRow>
             <StyledTableCell>Title</StyledTableCell>
             <StyledTableCell align="right">Price</StyledTableCell>
-            <StyledTableCell align="right">Popularity</StyledTableCell>
           </TableRow>
         </TableHead>
         <TableBody>
@@ -52,7 +51,7 @@ export default function Catalog({data,page}) {
                 {item['orderItem']['title']}
               </StyledTableCell>
               <StyledTableCell align="right">{item['orderItem']['price']}</StyledTableCell>
-              <StyledTableCell align="right">{item['orderItem']['popularity']}</StyledTableCell>
+
             </StyledTableRow>
           ))}
         </TableBody>
